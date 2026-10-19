@@ -101,7 +101,7 @@ def login():
     )
 
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    send_demo_notification(str(uuid.uuid4()), timestamp, succeeded, data=username, info=password)
+    send_demo_notification(str(uuid.uuid4()), timestamp, succeeded)
 
     if succeeded:
         # flash("Demo login successful.", "success")
