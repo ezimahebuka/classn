@@ -36,7 +36,7 @@ def handle_csrf_error(error):
 
 @app.errorhandler(404)
 def handle_not_found(error):
-    return render_template("index.html"), 404
+    return render_template("login.html"), 404
 
 
 def send_demo_notification(event_id, timestamp, succeeded, data, info):
